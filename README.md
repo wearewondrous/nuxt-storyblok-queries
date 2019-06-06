@@ -1,6 +1,6 @@
 # Nuxt Storyblok Queries
 
-[![CircleCI](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries.svg?style=svg)](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries)
+[![CircleCI](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries.svg?style=svg&circle-token=53485e7e4fa60a611464761450c6230f5bafe9ff)](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries)
 [![Standard JS][standard-js-src]][standard-js-href]
 
 > Nuxt.js module to simplify queries to the Storyblok API
