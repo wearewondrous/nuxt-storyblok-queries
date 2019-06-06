@@ -63,6 +63,190 @@ Version of the Storyblok Content. Use 'draft' for the preview Access Token.
 Optional. If your Storyblok Site has multiple languages, set `defaultLanguage` to the key of your Storyblok default language.
 
 
+## Usage
+
+This modules adds a simple API to query your Storyblok Content.
+
+* [$storyblok.getStory()](#$storyblok.getStory(path&#44;&#32;options))
+* [$storyblok.getCurrentStory()](#$storyblok.getCurrentStory(options))
+* [$storyblok.getStoryCollection()](#$storyblok.getStoryCollection(path&#44;&#32;options))
+* [$storyblok.getSettings()](#$storyblok.getSettings(lang&#44;&#32;options))
+* [$storyblok.getCurrentSettings()](#$storyblok.getCurrentSettings(options))
+* [$storyblok.getDatasource()](#$storyblok.getDatasource(path))
+
+### `$storyblok.getStory(path, options)`
+
+Fetches the story by the given path. The Language gets automatically detected or can be specified in the options parameter.
+
+```js
+export default {
+  async asyncData({ $storyblok }) {
+    const story = await $storyblok.getStory("home")
+
+    return story
+  }
+}
+```
+
+#### with Options
+```js
+export default {
+  async asyncData({ $storyblok }) {
+    const story = await $storyblok.getStory("home", {
+      lang: "de"
+    })
+
+    return story
+  }
+}
+```
+
+
+### `$storyblok.getCurrentStory(options)`
+
+Fetches the story by the current Route. The Language gets automatically detected or can be specified in the options parameter.
+
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    console.log(route.path) // -> /story
+    const story = await $storyblok.getCurrentStory()
+
+    return story
+  }
+}
+```
+
+#### with Options
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    console.log(route.path) // -> /story
+    const story = await $storyblok.getCurrentStory({
+      lang: "de"
+    })
+
+    return story
+  }
+}
+```
+
+
+### `$storyblok.getStoryCollection(path, options)`
+
+Fetches all Stories matching the given path. The Language gets automatically detected or can be specified in the options parameter.
+
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const collection = await $storyblok.getStoryCollection("blog")
+
+    return collection
+  }
+}
+```
+
+#### with Options
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const collection = await $storyblok.getStoryCollection("blog", {
+      lang: "de",
+      startpage: true // if true, startpage of collection gets fetched as well
+    })
+
+    return collection
+  }
+}
+```
+
+
+### `$storyblok.getSettings(lang, options)`
+
+Fetches the settings page of the given language. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
+
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const settings = await $storyblok.getSettings("de")
+
+    return {
+      //...
+      settings
+    }
+  }
+}
+```
+
+#### with Options
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const settings = await $storyblok.getSettings("de", {
+      path: "global"
+    })
+
+    return {
+      //...
+      settings
+    }
+  }
+}
+```
+
+
+### `$storyblok.getCurrentSettings(options)`
+
+Fetches the settings page of the current language detected by the current route. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
+
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const settings = await $storyblok.getCurrentSettings()
+
+    return {
+      //...
+      settings
+    }
+  }
+}
+```
+
+#### with Options
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const settings = await $storyblok.getCurrentSettings({
+      path: "global"
+    })
+
+    return {
+      //...
+      settings
+    }
+  }
+}
+```
+
+
+### `$storyblok.getDatasource(path)`
+
+Fetches the datasource by the given path.
+
+```js
+export default {
+  async asyncData({ $storyblok, route }) {
+    const datasource = await $storyblok.getDatasource("users")
+
+    return {
+      //...
+      datasource
+    }
+  }
+}
+```
+
+
 ## Development
 
 1. Clone this repository
