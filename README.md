@@ -10,14 +10,14 @@
 
 ## Setup
 
-1. Add the `nuxt-storyblok-queries` dependency with `yarn` or `npm` to your project
-2. Add `nuxt-storyblok-queries` to the `modules` section of `nuxt.config.js`
+1. Add the `@wearewondrous/nuxt-storyblok-queries` dependency with `yarn` or `npm` to your project
+2. Add `@wearewondrous/nuxt-storyblok-queries` to the `modules` section of `nuxt.config.js`
 3. Configure it:
 
 ```js
 {
   modules: [
-    ['nuxt-storyblok-queries', {
+    ['@wearewondrous/nuxt-storyblok-queries', {
       // Module option here
     }]
   ]
@@ -29,7 +29,7 @@
 ```js
 {
   modules: [
-    'nuxt-storyblok-queries'
+    '@wearewondrous/nuxt-storyblok-queries'
   ],
   storyblokQueries: [
     // Module options here
