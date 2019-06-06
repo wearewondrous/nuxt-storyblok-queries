@@ -39,6 +39,7 @@
     "eslint-plugin-standard": "latest",
     "eslint-plugin-vue": "latest",
     "husky": "latest",
-    "jest": "latest"
+    "jest": "latest",
+    "standard-version": "latest"
   }
 }
