@@ -1,9 +1,16 @@
 {
-  "name": "nuxt-storyblok-queries",
+  "name": "@wearewondrous/nuxt-storyblok-queries",
   "version": "0.1.0",
+  "description": "Nuxt.js module to simplify queries to the Storyblok API",
   "main": "lib/module.js",
   "license": "MIT",
-  "private": true,
+  "repository": "https://github.com/wearewondrous/nuxt-storyblok-queries",
+  "contributors": [
+    {
+      "name": "Serafin Lichtenhahn <serafin@wearewondrous.com>",
+      "url": "https://github.com/seralichtenhahn"
+    }
+  ],
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue lib",
