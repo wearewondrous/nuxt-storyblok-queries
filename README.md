@@ -1,5 +1,6 @@
 # Nuxt Storyblok Queries
 
+![npm (https://www.npmjs.com/package/@wearewondrous/nuxt-storyblok-queries)](https://img.shields.io/npm/v/@wearewondrous/nuxt-storyblok-queries.svg)
 [![CircleCI](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries.svg?style=svg&circle-token=53485e7e4fa60a611464761450c6230f5bafe9ff)](https://circleci.com/gh/wearewondrous/nuxt-storyblok-queries)
 [![Standard JS][standard-js-src]][standard-js-href]
 
@@ -257,7 +258,7 @@ export default {
 
 [MIT License](./LICENSE)
 
-Copyright (c) {{ author }}
+Copyright (c) [WONDROUS LTD](https://www.wearewondrous.com/)
 
 <!-- Badges -->
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
