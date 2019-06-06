@@ -1,0 +1,11 @@
+{
+  "name": "nuxt-storyblok-query",
+  "version": "0.1.0",
+  "main": "lib/module.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "consola": "^2.7.1",
+    "storyblok-js-client": "^1.0.25"
+  }
+}
