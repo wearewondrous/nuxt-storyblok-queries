@@ -1,0 +1,43 @@
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:10
+version: 2
+
+jobs:
+  install_dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - node-cache-10lts-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          - node-cache-10lts-{{ arch }}-{{ .Branch }}
+      - run:
+          name: install dependencies
+          command: yarn install
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: node-cache-10lts-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - persist_to_workspace:
+          root: .
+          paths:
+            - ./node_modules
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: lint yaml
+          command: yarn run lint
+workflows:
+  version: 2
+  build_lint_and_test:
+    jobs:
+      - install_dependencies
+      - lint:
+          requires:
+            - install_dependencies
