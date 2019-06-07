@@ -18,7 +18,7 @@
 {
   modules: [
     ['@wearewondrous/nuxt-storyblok-queries', {
-      // Module option here
+      // Module options here
     }]
   ]
 }
@@ -55,14 +55,13 @@ Cache Provider for the StoryBlok API. Not needed if you already have installed t
 
 - Default: `'published'`
 
-Version of the Storyblok Content. Use 'draft' for the preview Access Token.
+Version of the Storyblok Content. Use 'draft' together with the preview Access Token.
 
 ### `defaultLanguage`
 
 - Default: `''`
 
 Optional. If your Storyblok Site has multiple languages, set `defaultLanguage` to the key of your Storyblok default language.
-
 
 ## Usage
 
@@ -102,10 +101,9 @@ export default {
 }
 ```
 
-
 ### `$storyblok.getCurrentStory(options)`
 
-Fetches the story by the current Route. The Language gets automatically detected or can be specified in the options parameter.
+Fetches the story by the current Route. The Language gets automatically detected but can also be specified in the options parameter.
 
 ```js
 export default {
@@ -132,10 +130,9 @@ export default {
 }
 ```
 
-
 ### `$storyblok.getStoryCollection(path, options)`
 
-Fetches all Stories matching the given path. The Language gets automatically detected or can be specified in the options parameter.
+Fetches all Stories matching the given path. The Language gets automatically detected but can also be specified in the options parameter.
 
 ```js
 export default {
