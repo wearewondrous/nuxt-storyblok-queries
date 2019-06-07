@@ -68,12 +68,12 @@ Optional. If your Storyblok Site has multiple languages, set `defaultLanguage` t
 
 This modules adds a simple API to query your Storyblok Content.
 
-* [$storyblok.getStory()](#$storyblok.getStory(path&#44;&#32;options))
-* [$storyblok.getCurrentStory()](#$storyblok.getCurrentStory(options))
-* [$storyblok.getStoryCollection()](#$storyblok.getStoryCollection(path&#44;&#32;options))
-* [$storyblok.getSettings()](#$storyblok.getSettings(lang&#44;&#32;options))
-* [$storyblok.getCurrentSettings()](#$storyblok.getCurrentSettings(options))
-* [$storyblok.getDatasource()](#$storyblok.getDatasource(path))
+* [$storyblok.getStory()](#storyblokgetstorypath-options)
+* [$storyblok.getCurrentStory()](#storyblokgetcurrentstoryoptions)
+* [$storyblok.getStoryCollection()](#storyblokgetstorycollectionpath-options)
+* [$storyblok.getSettings()](#storyblokgetsettingslang-options)
+* [$storyblok.getCurrentSettings()](#storyblokgetcurrentsettingsoptions)
+* [$storyblok.getDatasource()](#storyblokgetdatasourcepath)
 
 ### `$storyblok.getStory(path, options)`
 
@@ -164,7 +164,7 @@ export default {
 
 ### `$storyblok.getSettings(lang, options)`
 
-Fetches the settings page of the given language. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
+Fetches the settings page of the given language. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
 
 ```js
 export default {
@@ -198,7 +198,7 @@ export default {
 
 ### `$storyblok.getCurrentSettings(options)`
 
-Fetches the settings page of the current language detected by the current route. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
+Fetches the settings page of the current language detected by the current route. The path for the settings route can be specified in the options parameter or falls back to `/settings`.
 
 ```js
 export default {
@@ -232,7 +232,7 @@ export default {
 
 ### `$storyblok.getDatasource(path)`
 
-Fetches the datasource by the given path.
+Fetches the datasource by the given path.
 
 ```js
 export default {
