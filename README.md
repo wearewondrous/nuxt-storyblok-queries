@@ -53,7 +53,7 @@ Cache Provider for the StoryBlok API. Not needed if you already have installed t
 
 ### `version`
 
-- Default: `'published'`
+- Default: `'auto'`
 
 Version of the Storyblok Content. Use 'draft' for the preview Access Token.
 
