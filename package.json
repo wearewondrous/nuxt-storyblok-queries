@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@babel/core": "latest",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "latest",
+    "@babel/runtime": "^7.4.5",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@nuxtjs/eslint-config": "latest",
