@@ -33,11 +33,23 @@ jobs:
       - run:
           name: lint yaml
           command: yarn run lint
+  test_unit:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: lint yaml
+          command: yarn run test:unit
 workflows:
   version: 2
   build_lint_and_test:
     jobs:
       - install_dependencies
       - lint:
+          requires:
+            - install_dependencies
+      - test_unit:
           requires:
             - install_dependencies
