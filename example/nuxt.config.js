@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 
-const accessToken = "pdkyV4RUmoFzi3IpAwbTrQtt"
+const accessToken = 'pdkyV4RUmoFzi3IpAwbTrQtt'
 
 module.exports = {
   rootDir: resolve(__dirname, '../'),
@@ -12,10 +12,9 @@ module.exports = {
   env: {
     accessToken
   },
-  modules: [
-    resolve(__dirname, "../")
-  ],
+  modules: [resolve(__dirname, '../')],
   storyblokQueries: {
-    accessToken
+    accessToken,
+    defaultLanguage: 'en'
   }
 }
