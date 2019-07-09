@@ -10,7 +10,9 @@
 <script>
 export default {
   async asyncData({ $storyblok }) {
-    const story = await $storyblok.getCurrentStory()
+    const story = await $storyblok.getStory('home')
+
+    console.log(story)
 
     return story
   }
