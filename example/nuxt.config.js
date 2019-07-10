@@ -12,6 +12,9 @@ module.exports = {
   env: {
     accessToken
   },
+  router: {
+    middleware: ['settings-loader']
+  },
   modules: [resolve(__dirname, '../')],
   storyblokQueries: {
     accessToken,
