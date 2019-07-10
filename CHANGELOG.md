@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v0.1.9...v1.0.0) (2019-07-10)
+
+
+### Bug Fixes
+
+* use correct language in getStory() ([cc831a5](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/cc831a5))
+
+
+### Tests
+
+* add more unit tests ([da2da18](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/da2da18))
+
+
+
 ### [0.1.9](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v0.1.8...v0.1.9) (2019-06-14)
 
 
