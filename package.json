@@ -16,7 +16,7 @@
     "lint": "eslint --ext .js,.vue lib",
     "test": "yarn lint && yarn test:unit",
     "test:unit": "jest",
-    "release": "yarn test && standard-version && git push --follow-tags && yarn publish --new-version"
+    "release": "yarn test && standard-version && git push --follow-tags && yarn publish"
   },
   "dependencies": {
     "consola": "^2.7.1",
