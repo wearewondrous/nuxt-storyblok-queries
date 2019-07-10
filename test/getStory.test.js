@@ -11,14 +11,17 @@ let nuxt, port
 
 const url = path => `http://localhost:${port}${path}`
 const get = path => request(url(path))
+const buildNuxt = async (config) => {
+  nuxt = new Nuxt(config)
+  await nuxt.ready()
+  await new Builder(nuxt).build()
+  port = await getPort()
+  await nuxt.listen(port)
+}
 
-describe('Storyblok Router', () => {
+describe('getStory()', () => {
   beforeAll(async () => {
-    nuxt = new Nuxt(config)
-    await nuxt.ready()
-    await new Builder(nuxt).build()
-    port = await getPort()
-    await nuxt.listen(port)
+    await buildNuxt(config)
   })
 
   afterAll(async () => {
@@ -30,8 +33,11 @@ describe('Storyblok Router', () => {
     expect(html).toContain('Hello server')
   })
 
-  test('Render /about', async () => {
-    const html = await get('/about')
-    expect(html).toContain('About')
+  test('Render / in different languages', async () => {
+    const htmlFr = await get('/fr')
+    expect(htmlFr).toContain('Hello French Server')
+
+    const htmlDe = await get('/de')
+    expect(htmlDe).toContain('Hello German Server')
   })
 })
