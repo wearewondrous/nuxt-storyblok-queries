@@ -19,8 +19,8 @@
     "release": "yarn test && standard-version && git push --follow-tags && yarn publish"
   },
   "dependencies": {
-    "consola": "^2.7.1",
-    "storyblok-js-client": "^1.0.25"
+    "consola": "^2.9.0",
+    "storyblok-js-client": "^1.0.27"
   },
   "devDependencies": {
     "@babel/core": "latest",
