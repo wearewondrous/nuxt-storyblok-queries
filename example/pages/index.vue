@@ -4,6 +4,7 @@
     <p>
       {{ story.content.text }}
     </p>
+    <div v-html="$storyblok.renderRichText(story.content.rich_text)" />
   </div>
 </template>
 

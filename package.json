@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "consola": "^2.9.0",
-    "storyblok-js-client": "^1.0.27"
+    "storyblok-js-client": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "latest",

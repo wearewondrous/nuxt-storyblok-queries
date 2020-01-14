@@ -245,6 +245,15 @@ export default {
 ```
 
 
+### `$storyblok.renderRichText(richTextContent)`
+
+Renders the Storyblok richtext field content and returns an HTML string.
+
+```html
+<div v-html="$storyblok.getRichTest(story.content.rich_text)" />
+```
+
+
 ## Development
 
 1. Clone this repository
