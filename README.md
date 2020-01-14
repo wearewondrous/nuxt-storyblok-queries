@@ -250,7 +250,7 @@ export default {
 Renders the Storyblok richtext field content and returns an HTML string.
 
 ```html
-<div v-html="$storyblok.getRichTest(story.content.rich_text)" />
+<div v-html="$storyblok.renderRichTest(story.content.rich_text)" />
 ```
 
 
