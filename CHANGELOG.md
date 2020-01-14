@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.0.3...v1.1.0) (2020-01-14)
+
+
+### Features
+
+* add rich text field renderer ([ed21119](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/ed21119))
+
+
+
 ### [1.0.3](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.0.2...v1.0.3) (2019-08-14)
 
 
