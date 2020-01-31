@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.1.0...v1.2.1) (2020-01-31)
+
+
+### Bug Fixes
+
+* correctly pass options when getting story collection ([c6e48e2](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/c6e48e2))
+* update README ([c8d52d0](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/c8d52d0))
+
+
+
+## 1.2.0 (2020-01-14)
+
+
+
 ## [1.1.0](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.0.3...v1.1.0) (2020-01-14)
 
 
