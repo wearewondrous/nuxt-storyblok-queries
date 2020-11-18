@@ -1,6 +1,6 @@
 {
   "name": "@wearewondrous/nuxt-storyblok-queries",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Nuxt.js module to simplify queries to the Storyblok API",
   "main": "lib/module.js",
   "license": "MIT",

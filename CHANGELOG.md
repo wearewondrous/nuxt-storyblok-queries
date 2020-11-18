@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.8](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.5...v1.2.8) (2020-11-18)
+
+
+### Bug Fixes
+
+* add option param to getDatasource ([e6b6b1a](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/e6b6b1a02526407e0aed6f812c0f911c6533a1af))
+
 ### [1.2.7](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.5...v1.2.7) (2020-11-18)
 
 
