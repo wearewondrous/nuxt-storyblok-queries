@@ -19,6 +19,7 @@
     "release": "yarn test && standard-version && git push --follow-tags && yarn publish"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "consola": "^2.15.0",
     "storyblok-js-client": "^3.1.1"
   },
