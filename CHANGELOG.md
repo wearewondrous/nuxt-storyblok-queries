@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.14](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.13...v1.2.14) (2021-04-09)
+
+
+### Bug Fixes
+
+* storyblok client import in plugin ([937bc60](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/937bc602cdbb81264586a0e24117de3f2a61b4a8))
+
 ### [1.2.13](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.12...v1.2.13) (2021-04-09)
 
 
