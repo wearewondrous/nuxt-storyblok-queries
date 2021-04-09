@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.10](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.9...v1.2.10) (2021-04-09)
+
+
+### Bug Fixes
+
+* load right mode in production ([d70430e](https://github.com/wearewondrous/nuxt-storyblok-queries/commit/d70430e21b72661665394723756b9c578fe5bfec))
+
 ### [1.2.9](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.8...v1.2.9) (2020-11-23)
 
 ### [1.2.8](https://github.com/wearewondrous/nuxt-storyblok-queries/compare/v1.2.5...v1.2.8) (2020-11-18)
